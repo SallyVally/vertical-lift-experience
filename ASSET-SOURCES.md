@@ -1,0 +1,14 @@
+# Asset sources
+
+Cabin geometry: created for this concept in Blender, source build-v3.py and elevator-v3.blend.
+
+Poly Haven assets (CC0):
+- Walnut Veneer 02: https://polyhaven.com/a/walnut_veneer_02
+- Marble 01: https://polyhaven.com/a/marble_01
+- Studio Small 09: https://polyhaven.com/a/studio_small_09
+
+Three.js r170, MIT License: https://github.com/mrdoob/three.js/tree/r170
+Manrope font: https://fonts.google.com/specimen/Manrope
+
+v4 lighting: direct and indirect diffuse illumination baked in Blender Cycles, 48 samples. Full 2048 px illumination atlas is packed in elevator-v4.blend. A 1024 px Radiance HDR map is used by the website through UV1.
+Loading doors: rendered in Blender, then split into door-left.png and door-right.png. The cabin is the first section of a scrolling page.
