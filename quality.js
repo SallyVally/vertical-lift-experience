@@ -5,23 +5,24 @@ export function selectQuality() {
   const shortSide = Math.min(innerWidth, innerHeight);
   const compact = innerWidth < 800 || (coarse && shortSide <= 900);
   const mobile = requested === 'mobile' || requested === 'safe' || (requested !== 'desktop' && compact);
-  const modest = (navigator.deviceMemory && navigator.deviceMemory <= 4) || navigator.hardwareConcurrency <= 4;
+  const modest = (navigator.deviceMemory && navigator.deviceMemory <= 2) || navigator.hardwareConcurrency <= 4;
   const safe = requested === 'safe' || (mobile && modest);
   return {
     name: mobile ? (safe ? 'mobile-safe' : 'mobile') : 'desktop',
     mobile, safe,
     fps: mobile ? (safe ? 24 : 30) : 60,
-    dpr: mobile ? (safe ? .85 : 1) : 1.6,
-    pixelBudget: mobile ? (safe ? 360000 : 480000) : 3500000,
-    mirrorSize: mobile ? (safe ? 192 : 256) : 1024,
-    mirrorFps: mobile ? (safe ? 2 : 4) : 60,
-    textScale: mobile ? .65 : 1,
-    anisotropy: mobile ? 2 : 8,
+    dpr: mobile ? (safe ? 1.25 : 1.5) : 2,
+    pixelBudget: mobile ? (safe ? 600000 : 900000) : 5500000,
+    mirrorSize: mobile ? (safe ? 768 : 1024) : 1536,
+    mirrorSamples: mobile ? 2 : 4,
+    mirrorFps: mobile ? (safe ? 10 : 15) : 60,
+    textScale: 1,
+    anisotropy: mobile ? 4 : 8,
     assets: mobile ? {
       model: './assets/mobile/elevator.glb',
       environment: './assets/mobile/studio.hdr',
       lighting: './assets/mobile/cabin-light.hdr',
-      wood: './assets/mobile/walnut.webp'
+      wood: './assets/mobile/walnut.webp?v=clarity-3'
     } : {
       model: './elevator-v4.glb',
       environment: './materials/studio.hdr',
