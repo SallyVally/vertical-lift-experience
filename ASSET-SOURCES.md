@@ -16,3 +16,5 @@ Loading doors: rendered in Blender, then split into door-left.png and door-right
 Mobile derivatives: embedded model textures resized to 512 px (AO 1024 px), the geometry is unchanged. HDR environment and illumination maps resized in Blender to 512 px. Loading doors converted to WebP; the external mobile walnut color map is 1024 px WebP. Originals remain available for the desktop profile.
 
 Corridor luminaires use project-authored screen-space ribbon shaders with smooth coverage. Portrait layout reuses the original walnut geometry, baked UV illumination and material for the control-panel pilaster.
+
+Company identity: vector mark redrawn from the company brochure supplied by the user. Business name, contacts and company facts are transcribed from that brochure. Architectural object diagrams are original SVG artwork for the site.
