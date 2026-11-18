@@ -1,5 +1,5 @@
 import { themes,setTheme } from './themes.js?v=company-4';
-import { company,createRequest,requestMailto } from './company.js?v=company-4';
+import { company,createRequest,requestMailto } from './company.js?v=catalog-5';
 
 const root=document.documentElement;
 let mode='full';try{mode=localStorage.getItem('vertical-motion')||'full'}catch{}

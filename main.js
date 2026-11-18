@@ -27,7 +27,7 @@ const floors=[
  {label:'Главная',kicker:'ЛИФТ МОНТАЖ СЕРВИС',lines:['Уверенность.','На каждом','этаже.'],body:['Поставка и монтаж лифтового оборудования.','Обслуживание и модернизация.'],action:'Наши услуги',anchor:'#services'},
  {label:'Услуги',kicker:'ВЕСЬ ПУТЬ ЛИФТА',lines:['Один партнёр.','Весь путь','лифта.'],body:['Поставка и монтаж','Техническое обслуживание','Модернизация оборудования'],action:'Выбрать услугу',anchor:'#services'},
  {label:'Компания',kicker:'СИЛЬНАЯ ИНЖЕНЕРНАЯ ОСНОВА',lines:['Из Сибири.','По всей','России.'],body:['Представители ЩЛЗ и Могилёвского завода.','Комплексный подход к лифтовым проектам.'],action:'О компании',anchor:'#approach'},
- {label:'Контакты',kicker:'ОБСУДИМ ВАШ ПРОЕКТ',lines:['Обсудим','ваш','проект.'],body:['8 952 907-83-66','pochta@mail.ru','Новосибирск, ул. Гоголя, 237'],action:'Связаться с нами',anchor:'#contact'}
+ {label:'Контакты',kicker:'ОБСУДИМ ВАШ ПРОЕКТ',lines:['Обсудим','ваш','проект.'],body:['8 952 907-83-66','maxotin08@mail.ru','Новосибирск, ул. Гоголя, 237'],action:'Связаться с нами',anchor:'#contact'}
 ];
 let renderer,model,mirror,textGroup,veil,screenPlane,frontLight,panelBrand;
 let controls=[],leds=[],textLayers=[];
@@ -110,7 +110,7 @@ function buildText(i){
  makeText(`0${i+1}  /  ${data.kicker}`,portrait?39:25,'kicker',170,.04,'kicker');
  data.lines.forEach((line,j)=>makeText(line,portrait?178:148,j===data.lines.length-1?'accent':'title',318+j*(portrait?184:157),.18+j*.16,'title'));
  const bodyY=data.lines.length===2?748:portrait?938:888;
- const mobileBodies=[['Поставка и монтаж лифтов.','Обслуживание и модернизация.'],['Поставка и монтаж','Обслуживание','Модернизация'],['Представители ЩЛЗ','и Могилёвского завода.','Работаем по всей России.'],['8 952 907-83-66','pochta@mail.ru','Новосибирск, Гоголя, 237']];
+ const mobileBodies=[['Поставка и монтаж лифтов.','Обслуживание и модернизация.'],['Поставка и монтаж','Обслуживание','Модернизация'],['Представители ЩЛЗ','и Могилёвского завода.','Работаем по всей России.'],['8 952 907-83-66','maxotin08@mail.ru','Новосибирск, Гоголя, 237']];
  const body=portrait?mobileBodies[i]:data.body;
  body.forEach((line,j)=>makeText(line,portrait?62:40,'body',bodyY+j*(portrait?86:62),.65+j*.09));
  makeText(data.action+'     ↗',portrait?54:30,'action',1253,.95);

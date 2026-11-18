@@ -1,5 +1,5 @@
 export const company = {
-  name:'Лифт Монтаж Сервис',phone:'8 952 907-83-66',tel:'+79529078366',email:'pochta@mail.ru',address:'г. Новосибирск, ул. Гоголя, 237'
+  name:'Лифт Монтаж Сервис',phone:'8 952 907-83-66',tel:'+79529078366',email:'maxotin08@mail.ru',address:'г. Новосибирск, ул. Гоголя, 237'
 };
 
 export function createRequest(data) {
